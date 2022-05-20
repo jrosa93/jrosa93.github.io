@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+    /* metadata  */
+    const metadata = [
+        '<meta name="description" content="My work account.">'
+    ];
+
+    Array.from(metadata).forEach(function (md) {
+        document.head.innerHTML += md;
+    });
+
+    /* libs */
     const links = [
         '<!-- Bootstrap v5.1.3 -->',
 
